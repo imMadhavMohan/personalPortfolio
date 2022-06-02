@@ -1,0 +1,46 @@
+.Browser_heading:after{
+    content: "";
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.Browser_heading {
+    color: var(--color-dark);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+}
+
+.underline_text {
+    line-height: 1;
+    display: inline;
+    background-image: linear-gradient(transparent 50%,var(--underline) 50%,var(--underline) 85%,transparent 85%,transparent 100%);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+}
+
+.container{
+    display: inline-block;
+    margin:12px;
+    width: 19em;
+    height: auto;
+    background-color: white;
+}
+
+a.arrow {
+    position: relative;
+    padding-right: 1.25rem;
+    /* text-decoration: none;
+    font-family: Mosk,sans-serif; */
+    letter-spacing: .05rem;
+}
+
+.Browser_footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

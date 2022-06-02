@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Smooch&family=Zen+Loop&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;    
+}
+
+nav ul li{
+    list-style: none; 
+    padding-top: 1.8rem;
+    padding-bottom: 1.6rem;
+    font-size: 1.8rem;   
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .infoname{
+    font-size: 1.6rem;
+    color: #B4FF9F;
+    display: flex;
+    align-items: center;
+    padding: 2.2px;    
+    margin-left: -1rem;
+    border-radius: 1.5rem;
+    font-weight: bold; 
+    transition: transform 0.2s;   
+}
+
+.navbar .infoname:hover{
+    transform: scale(0.9);
+    background-color: crimson; 
+    color: #B6FFCE;     
+}
+
+.navbar .infoname i{
+    display: flex;    
+    color: #9FC088;
+    font-size: 3rem;
+    background-color: white;
+    margin-right: 1rem;    
+    border-radius: 30px;
+}
+
+.container{
+    display: flex; 
+}
+
+.sidebar{
+    background-color: crimson;
+    font-family: 'Macondo', cursive;
+    width: 20rem;    
+    height: 100vh;
+}
+
+.sidebar nav{
+    padding: 1.4rem;
+} 
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute; 
+}
+
+.menu{
+    background-color: #bc94f0;  
+    cursor: pointer;  
+}
+
+.hide{
+    padding-top: 5px;
+    position: absolute;
+    height: 1.8em;
+    width: 6.5em;    
+    display: flex;
+}
+
+.ham{
+    width: 20px;
+    height: auto;
+}
+
+.cross{
+    width: 20px;
+    /* margin-left: em; */
+    height: auto;
+}
+
+nav a:hover{
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 18px;
+    color: crimson;
+}
+
+.main{
+    background-color: #92B4EC;
+    width: 100vw;        
+    height: 100vh;
+    position: relative;
+}
+
+.main h2{
+    font-size: 4em;
+    padding: 20px 0;
+    text-align: center;    
+}
+
+.infocontainer{
+    display: flex;    
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 0.2 linear; */
+
+    background-color: #B4FF9F;
+    flex-wrap: wrap;
+    margin: auto;    
+    height: auto;
+    width: auto;    
+}
+
+.blog{        
+    width: 18em;
+    max-width: 24em;
+    border: 2px;
+    box-shadow: 0 0 20px rgba(166, 107, 225, 0.933);
+    margin: 15px ;
+    
+    position: relative;
+    flex: 1 1 200px;
+    border-radius: 22px;
+    height: 16rem;    
+}
+
+.blog:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #14C38E;
+    box-shadow: 0 0 20px crimson;
+    background-color: #FFD9C0;
+}
+
+.one{
+    position: absolute;
+    bottom:0;
+    float:center;
+    font-weight: bold;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.6em;
+    padding: 0.4em;   
+}
+
+.b1{    
+    margin-top: 5em;    
+    margin-bottom: auto;
+}
+
+.head{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-family: 'Zen Loop', cursive;
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-top: 0.4em;
+    text-shadow: 2px 1px 2px #FFD24C;    
+}
+
+.icon{    
+    width: 2.2rem;
+    height: auto;    
+    margin-left: -0.2rem;
+}
+
+.head .icon{
+    width: auto;
+    height: 1.4em;
+    margin: auto;
+}
+
+.blog .icon{
+    margin-left: 3rem;
+}
+
+/* scrollbar styling */
+html::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+html::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(71, 66, 227) 100%);
+  }
+
+html::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100vh black;
+  }
+
+@media (max-width: 768px){
+	.main{
+        height:auto; 
+    }
+}

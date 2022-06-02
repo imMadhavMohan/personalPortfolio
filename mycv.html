@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="mycv.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+<body>
+    <!-- Container start-->
+    <div class="container">
+        <div class="sidebar">            
+            <!-- Madhav -->
+            <nav class="navbar">
+                <div class="infoname"><i class="fa-regular fa"><image style="width:auto;height:1.8em; align-items:center" class="icon" src="Images/smile.png"></i>Maddy</div>
+                <ul>
+                    <li><a href="mycv.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/house.png"></i> Home</a></li>
+                    <li><a href="skills.html" class="user"><i class="fa-solid fa-skill"><image style="width:2.8rem;" class="icon" src="Images/skills.png"></i> Skills</a></li>
+                    <!-- <li><a href="mycv.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/resume.png"></i> Resume</a></li> -->
+                    <li><a href="blog.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/blogging.png"></i> Blogs</a></li>
+                    <li><a href="contact.html" class="user"><i class="fa-regular fa-address"><image style="width:2.8rem;" class="icon" src="Images/communicate.png"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <!-- Main -->
+        <div class="main">
+            <div class="hide">
+                <img class="ham menu" src="Images/ham.png" alt="">
+                <img class="cross menu" src="Images/close.png" alt="">
+            </div>
+            <!-- Gp -->
+            <div class="infocontainer"> 
+                  <!-- p -->
+                <div class="devd devinfo"> 
+                          <!-- c -->
+                    <ul>    
+                        <li class="hi"><span>👋</span><span>Hi, I'm Madhav_Mohan</span></li>                                            
+                        <li class="hello txt"> <span>.....a self-taught passionate <image style="height:2em;width:auto;margin-top:-0.8em;margin-left:auto;" class="icon" src="Images/coding.png"> fullstack developer ,</span></li>
+                        <li class="name txt"><span>like playing cricket <image style="height:2em;width:auto;margin-top:-1em;margin-left:auto; " class="icon" src="Images/cricket-player.png">, <image style="height:1.6em;width:auto;margin-top:-1em;margin-left:auto;" class="icon" src="Images/code.png"> coding(focuses on writing clean code) ,</span></li>
+                        <li class="about txt"><span>love technical <span class="blog"> <a href="#">Blogs</a></span> <image style="height:1em;width:auto;margin-left:auto;" class="icon" src="Images/pencil.png">writing ,</span></li>
+                        <li class="moreabout txt"><span><image class="icon" style="height:2em;width:auto;margin-top:-0.8em;margin-left:auto;" src="Images/beach.png">travelling , <image style="height:2em;width:auto;margin-left:auto;" class="icon" src="Images/coffee.png">coffy and <image style="height:1.4em;width:auto;margin-top:-1em;margin-left:auto;" class="icon" src="Images/dosa.png"> Dosa.</span></li> 
+                    </ul>                                        
+                </div>  
+                <div class="colmn">
+                  <div class="devpic devinfo">
+                        <figure class="imgdev">
+                            <img style="width:10em;height:auto;" src="Images/circleImage.png" class="devpic" alt="Dev Pic">                                                
+                        </figure>                    
+                  </div>   
+                
+                  <div class="btns">
+                    <button class="cv btn"><a><image class="icon" src="Images/folder.png"><span> Download</span> CV</a></button>
+                    <button class="contact btn"><a><image class="icon" src="Images/contact.png"><span> Contact Me</span></a></button>
+                  </div>
+                </div>     
+            </div>                 
+        </div>           
+    <!-- Js Files -->
+    <script src="portfolio.js"></script>  
+    <script src="confetti.js"></script>
+    <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 6000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+    </script>  
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+
+</head>
+<body>
+    <!-- Container start-->
+    <div class="container">
+        <div class="sidebar">            
+            <!-- Madhav -->
+            <nav class="navbar">
+                <div class="infoname"><i class="fa-regular fa"><image style="width:auto;height:1.8em;align-items:center" class="icon" src="Images/smile.png"></i>Maddy</div>
+                <ul>
+                    <li><a href="mycv.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/house.png"></i> Home</a></li>
+                    <li><a href="intro.html" class="user"><i class="fa-solid fa-skill"><image style="width:2.8rem;" class="icon" src="Images/skills.png"></i> Skills</a></li>
+                    <!-- <li><a href="mycv.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/resume.png"></i> Resume</a></li> -->
+                    <li><a href="blog.html" class="user"><i class="fa-solid fa"><image style="width:2.8rem;" class="icon" src="Images/blogging.png"></i> Blogs</a></li>
+                    <li><a href="contact.html" class="user"><i class="fa-regular fa-address"><image style="width:2.8rem;" class="icon" src="Images/communicate.png"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!-- Main -->
+        <div class="main">
+            <div class="hide">
+                <img class="ham menu" src="Images/ham.png" alt="">
+                <img class="cross menu" src="Images/close.png" alt="">
+            </div>            
+                <div class="contactform">                                    
+                    <form class="form">                                                    
+                        <div class="col-auto formhead">
+                            <h2>Drop your information</h2>
+                        </div>                    
+                        <div class="col-auto">
+                            <div class="email"><i class="material-icons msg">email</i></div>
+                            <label for="staticEmail2" class="visually-hidden">Email</label>
+                            <input type="text" class="form-control-plaintext" id="email" placeholder="email@example.com">
+                        </div>
+                        <div class="col-auto">
+                            <div class="name"><i class="material-icons msg">people</i></div>
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" class="form-control-plaintext" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="col-auto">
+                            <div class="phone"><i class="material-icons msg">phone</i></div>
+                            <label for="phone" class="visually-hidden">Phone</label>
+                            <input type="phone" class="form-control" id="phone" placeholder="+9192xx24xx11">
+                        </div>
+                        <div class="col-auto">
+                            <div class="city"><i class="material-icons msg">location_city</i></div>
+                            <label for="city" class="visually-hidden">City</label>
+                            <input type="city" class="form-control" id="city" placeholder="Banglore, In">
+                            <div class="term">
+                                <i class="material-icons">security</i>
+                                <span class="terms" >all your info will be kept confidentioal</span>
+                            </div>
+                        </div>          
+                        <div class="col-auto"> 
+                            <div class="msg">
+                                <div class="text"><i class="material-icons">textsms</i></div>    
+                                <label for="message" class="visually-hidden">Msg</label>                  
+                                <textarea id="text" type="textarea" placeholder="type message" ></textarea>                                                       
+                            </div>                                
+                        </div>     
+                    </br>         
+                        <div class="col-auto btns">                            
+                            <input type="submit" class="btn"></input>
+                        </div>                        
+                    </form>                    
+                </div>      
+                <div class="socialicon">
+                    <ul>
+                        <li class="sicon fb" style="background-color: #3b5998;"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="sicon twt" style="background-color: #1c9cea;"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="sicon ins" style="background-color: #f5a510;"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="sicon lin" style="background-color: #1b53a4;"><a href="https://www.linkedin.com/in/madhav-m-p-6723301ab/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="sicon git" style="background-color: black;"><a href="https://github.com/imMadhavMohan"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>                         
+            </div>        
+    </div>
+    <!-- Js Files -->
+    <script src="portfolio.js"></script>   
+    <script src="confetti.js"></script>
+    <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 6000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+    </script>   
+</body>
+</html>

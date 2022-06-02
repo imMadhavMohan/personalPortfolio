@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Mono:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    list-style: none; 
+    padding-top: 1.8rem;
+    padding-bottom: 1.6rem;
+    font-size: 1.8rem;   
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+div{
+    overflow:hidden;    
+}
+
+.container{
+    display: flex; 
+}
+
+.sidebar{
+    background-color: crimson;
+    font-family: 'Macondo', cursive;
+    width: 20rem;    
+    height: 100vh;
+}
+
+.sidebar nav{
+    padding: 1.4rem;
+} 
+
+.navbar .infoname {
+    font-size: 1.6rem;
+    color: #B4FF9F;
+    display: flex;
+    align-items: center;
+    padding: 2.2px;
+    margin-left: -1rem;
+    border-radius: 1.5rem;    
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.navbar .infoname:hover{
+    transform: scale(0.9);
+    background-color: crimson; 
+    COLOR: #B6FFCE;     
+}
+
+.navbar .infoname i{
+    display: flex;    
+    color: #9FC088;
+    font-size: 3rem;
+    background-color: white;
+    margin-right: 1rem;    
+    border-radius: 30px;
+}
+
+nav a:hover{
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 18px;
+    color: crimson;
+}
+
+.main{
+    background-color: aquamarine;
+    width: 100vw;
+}
+
+.devpic img{
+    height: 66vh;     
+    position: absolute;
+    left: 56rem; 
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute; 
+}
+
+.menu{
+    background-color: #bc94f0; 
+    cursor: pointer;   
+}
+
+.hide{
+    padding-top: 5px;
+    position: absolute;
+    height: 1.8em;
+    width: 6.5em;    
+    display: flex;
+}
+
+.ham{
+    width: 20px;
+    height: auto;
+}
+
+.cross{
+    width: 20px;
+    /* margin-left: em; */
+    height: auto;
+}
+
+
+.infocontainer{
+    background-color:rgb(212, 178, 161);
+    height: 66vh;
+    margin: auto;
+    margin-top: 5rem;
+    width: 75vw;    
+    border-radius: 0.5rem;    
+    justify-content: space-around;
+    position: relative;    
+}
+
+.hello{
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'Macondo', cursive;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'Macondo', cursive;
+}
+
+.about{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Macondo', cursive;
+    z-index: 1;
+}
+
+.moreabout{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Macondo', cursive;
+    margin-top: 1.2rem;
+    z-index: 1;
+}
+
+
+.devinfo{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;    
+    left: 10%;        
+}
+
+.btns{
+    margin-top: 1.4rem;    
+}
+
+.btns button{
+    padding:0.6rem;
+    border-radius: 1rem;
+    margin: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;    
+    cursor: pointer;
+    font-family: 'Macondo', cursive;
+    color:rgba(184, 11, 215, 0.8);
+    background-color: black;
+}
+
+.btns button:hover{
+    color: black;
+    background-color: rgba(184, 11, 215, 0.8);
+}
+
+/* scrollbar styling */
+html::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+html::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+  }
+
+html::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100vh black;
+  }
